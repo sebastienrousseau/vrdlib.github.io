@@ -1,0 +1,14 @@
+/* TEAM */
+	Name: The Random (VRD) Team
+	Website: https://vrdlib.com/index.html
+	Twitter: @wwdseb
+	Location: London, UK
+
+/* THANKS */
+	Thanks: Thanks for reading!
+
+/* SITE */
+	Last update: 2024-03-10
+	Standards: HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML
+	Components: Shokunin SSG, Shokunin CLI, Shokunin Templates, Kaishi Templates, Kaishi Themes
+	Software: Shokunin, Rust

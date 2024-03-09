@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://vrdlib.com/offline/index.html/sitemap.xml
