@@ -10,7 +10,7 @@
 
 <!-- markdownlint-enable MD033 MD041 -->
 
-# RustLogs.com - Official Website 🌏
+# VRDLib.com - Official Website 🌏
 
 Welcome to the repository for [vrdlib.com][00], the digital presence of
 Random (VRD).
