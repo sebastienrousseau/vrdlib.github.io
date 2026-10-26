@@ -1,0 +1,26 @@
+# Site configuration for vrdlib.com, built with `make build`.
+# The paths are relative to the repository root.
+
+site_name = "vrd"
+site_title = "vrd: a small, no_std random number generator for Rust"
+site_description = "vrd is a random number generator library for Rust: Xoshiro256++ by default, with optional Mersenne Twister, PCG, ChaCha20 and quasi-random backends, for std, no_std and WebAssembly."
+base_url = "https://vrdlib.com"
+language = "en-GB"
+
+content_dir = "_posts"
+template_dir = "_layouts"
+output_dir = "docs"
+
+# Agentic discovery: /agents.txt, /.well-known/ai-plugin.json and
+# /.well-known/mcp.json. Permissive, because the site exists to be read.
+[agents]
+agents_txt = true
+ai_plugin = true
+
+[agents.mcp]
+enabled = true
+
+# Security headers for hosts that read `_headers`. GitHub Pages ignores the
+# file; it is kept so the same build deploys elsewhere with the headers.
+[edge_headers]
+targets = ["netlify", "cloudflare"]
