@@ -1,251 +1,146 @@
 ---
-
-# Front Matter (YAML)
-
-author: "The Random (VRD) Team"
-banner_alt: "a screenshot of a computer"
-banner_height: "100vh"
-banner_width: "100vw"
-banner: "https://kura.pro/stock/images/banners/thomas-tastet-0eqgB57xMeA.webp"
-cdn: "https://kura.pro"
-changefreq: "weekly"
-charset: "utf-8"
-cname: ""
-copyright: "© 2024 Random (VRD). All rights reserved."
-date: "Mar 10, 2024"
-description: "Explore the essentials of Random (VRD), a Rust library for generating high-quality random numbers using the Mersenne Twister algorithm."
-download: ""
-format-detection: "telephone=no"
-hreflang: "en"
-icon: "https://kura.pro/shokunin/images/favicon.ico"
-id: "https://vrdlib.com/about/index.html"
-image_alt: "Image of Random (VRD)"
-image_height: "100vh"
-image_width: "100vw"
-image: "https://kura.pro/vrd/images/logos/vrd.webp"
-keywords: "Random (VRD), Rust library, Mersenne Twister, random number generation, open-source, high-quality, customizable, reproducible, statistical computing, efficient"
+name: "vrd"
+short_name: "vrd"
+title: "Frequently asked questions about vrd | vrd"
+description: "Answers about vrd: what it is, cryptographic security, the Mersenne Twister, the Rust version, reproducible runs, threads, no_std, output stability, versions and the licence."
+keywords: "vrd faq, is vrd secure, vrd mersenne twister, vrd msrv, vrd no_std"
+author: "Sebastien Rousseau"
+date: "2026-10-26"
+news_publication_date: "2026-10-26"
+layout: "page"
 language: "en-GB"
-layout: "faqs"
-locale: "en_GB"
-logo_alt: "Logo of Random (VRD)"
-logo_height: "44"
-logo_width: "44"
-logo: "https://kura.pro/vrd/images/logos/vrd.webp"
-menu: "active"
-measurementID: "G-78YLZEFT04"
-name: "Random (VRD)"
-permalink: "https://vrdlib.com/about/index.html"
-rating: "general"
-referrer: "no-referrer"
-revisit-after: "7 days"
-robots: "index, follow"
-short_name: "random (vrd)"
-subtitle: "Unlocking the Secrets of High-Quality Random Number Generation with Random (VRD)"
-tags: "Random, VRD, Rust, Mersenne Twister, Open-source, Statistical, Efficient, Customizable, Reproducible, Documentation"
-theme-color: "167, 42, 0"
-title: "Understanding Random (VRD): A Comprehensive FAQ Guide"
-url: "https://vrdlib.com/about/index.html"
-viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
-
-# RSS - The RSS feed front matter (YAML).
-
-atom_link: "https://vrdlib.com/about/rss.xml"
-category: "Software, Static Site Generator, Rust"
-docs: "https://validator.w3.org/feed/docs/rss2.html"
-generator: "Shokunin SSG (version 0.0.26)"
-item_description: "Explore the essentials of Random (VRD), a Rust library for generating high-quality random numbers using the Mersenne Twister algorithm."
-item_guid: "https://vrdlib.com/about/rss.xml"
-item_link: "https://vrdlib.com/about/rss.xml"
-item_pub_date: "Sun, 10 Mar 2024 06:06:06 +0100"
-item_title: "Understanding Random (VRD): A Comprehensive FAQ Guide"
-last_build_date: "Sun, 10 Mar 2024 06:06:06 +0100"
-managing_editor: "contact@vrdlib.com"
-pub_date: "Sun, 10 Mar 2024 06:06:06 +0100"
-ttl: "60"
-type: "website"
-webmaster: "contact@vrdlib.com"
-
-# Apple - The Apple front matter (YAML).
-
-apple_mobile_web_app_orientations: "portrait"
-apple_touch_icon_sizes: "192x192"
-apple-mobile-web-app-capable: "yes"
-apple-mobile-web-app-status-bar-inset: "black"
-apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "Understanding Random (VRD): A Comprehensive FAQ Guide"
-apple-touch-fullscreen: "yes"
-
-# MS Application - The MS Application front matter (YAML).
-
-msapplication-config: "https://vrdlib.com/browserconfig.xml"
-msapplication-tap-highlight: "no"
-msapplication-TileColor: "167, 42, 0"
-msapplication_tile_image: "https://kura.pro/vrd/images/logos/vrd.webp"
-
-# Twitter Card - The Twitter Card front matter (YAML).
-
-twitter_card: "summary"
-twitter_creator: "@wwdseb"
-twitter_description: "Explore the essentials of Random (VRD), a Rust library for generating high-quality random numbers using the Mersenne Twister algorithm."
-twitter_image: "https://kura.pro/vrd/images/logos/vrd.webp"
-twitter_image_alt: "Image of Random (VRD)"
-twitter_site: "@wwdseb"
-twitter_title: "Understanding Random (VRD): A Comprehensive FAQ Guide"
-twitter_url: "https://vrdlib.com/about/index.html"
-
-# Humans.txt - The Humans.txt front matter (YAML).
-
-author_website: "https://vrdlib.com/about/index.html"
-author_twitter: "@wwdseb"
-author_location: "London, UK"
-thanks: "Thanks for reading!"
-site_last_updated: "2024-03-10"
-site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
-site_components: "Shokunin SSG, Shokunin CLI, Shokunin Templates, Shokunin Themes, Kaishi SSG, Kaishi CLI, Kaishi Templates, Kaishi Themes"
-site_software: "Shokunin, Rust"
-
+schema: "page"
+changefreq: "monthly"
+eyebrow: "FAQ"
+headline: "Frequently asked questions"
+lead: "Short answers first; each links to the page with the detail where there is one."
+nav_faqs: "true"
 ---
+## What is vrd?
 
-## General Questions
+vrd is a free, open-source random number generator library for Rust. It uses Xoshiro256++ by default and adds Mersenne Twister, PCG, ChaCha20 and quasi-random sequences behind Cargo features. See the [features](/features/).
 
-### What is Random (VRD)?
+## Is vrd cryptographically secure?
 
-Random (VRD) is a Rust library for generating high-quality random numbers based on the Mersenne Twister algorithm. It provides a robust and efficient implementation of the algorithm, allowing developers to generate random numbers for various purposes, such as simulations, games, and statistical analysis.
+Only with the `crypto` feature and `Random::new_secure()`, which uses ChaCha20. The default Xoshiro256++ generator, the Mersenne Twister and PCG are predictable and must not be used for secrets. See the [security page](/security/).
 
-### What does VRD stand for?
+## Does vrd still use the Mersenne Twister?
 
-VRD stands for "**Varied Random Distribution**". The name reflects the library's ability to generate random numbers with a varied and well-distributed output.
+Not by default. Since 0.0.10, `Random::new()` uses Xoshiro256++. The Mersenne Twister is still available through `Random::new_mersenne_twister()` for code that needs MT19937's exact output. See the [migration guide](/migration/).
 
-### What are the key features of Random (VRD)?
+## Which Rust version do I need?
 
-Some of the key features of Random (VRD) include:
+Rust 1.85 or newer. vrd's manifest says 1.70, but the rand 0.10 crate it depends on needs 1.85.
 
-- High-quality random number generation based on the Mersenne Twister algorithm
-- Efficient and fast generation of random numbers
-- Support for various data types, including integers, floats, booleans, and more
-- Customizable random number generation with advanced configuration options
-- Ability to seed the random number generator for reproducible results
-- Easy-to-use API with intuitive methods for generating random numbers
+## Can I get the same numbers on every run?
 
-### Who developed Random (VRD)?
+Yes. Seed the generator with `Random::from_u64_seed` or `Random::from_seed` and it produces the same sequence every time. See [reproducible sequences](/features/#reproducible-sequences).
 
-Random (VRD) was developed by Sébastien Rousseau, a passionate Rust developer with a strong interest in statistical computing and random number generation.
+## Can I share one generator between threads?
 
-### Is Random (VRD) open-source?
+No. A Random holds mutable state. Use one per thread, each with its own seed, or `split()` streams from the default backend.
 
-Yes, Random (VRD) is an open-source library. It is released under a dual license: the MIT license and the Apache License 2.0. This means that you can use, modify, and distribute the library freely, subject to the terms of either license.
+## Does it work without the standard library?
 
-![divider][divider].class="m-10 w-100"
+Yes. With default features off, the core builds without std or an allocator; CI checks it for a Cortex-M target and for WebAssembly. Seed it yourself there.
 
-## Usage and API
+## Is the output stable between versions?
 
-### How do I add Random (VRD) to my Rust project?
+The project aims to keep the output for a seed the same between patch releases and lists any change by method in the CHANGELOG. Releases 0.0.10 and 0.0.11 changed the output of int, uint, random_range and normal.
 
-To use Random (VRD) in your Rust project, add the following line to your `Cargo.toml` file under the `[dependencies]` section:
+## Why is crates.io at 0.0.12 when the repository says 0.0.14?
 
-```toml
-[dependencies]
-vrd = "0.0.6"
-```
+Versions 0.0.13 and 0.0.14 updated dependencies only and were tagged on GitHub but not published to crates.io. 0.0.12 has the same API.
 
-Then, run `cargo build` to download and compile the library.
+## What does it cost, and under which licence?
 
-### How do I create a new random number generator?
+Nothing. vrd is free software under the Apache License 2.0 or the MIT licence, at your option.
 
-To create a new random number generator, you can use the `Random::new()` method:
-
-```rust
-use vrd::random::Random;
-
-let mut rng = Random::new();
-```
-
-This will create a new instance of the random number generator with a default seed value.
-
-### How do I generate random numbers of different types?
-
-Random (VRD) provides methods for generating random numbers of various types. Here are a few examples:
-
-```rust
-use vrd::random::Random;
-
-let mut rng = Random::new();
-
-let random_u32 = rng.rand();            // Generate a random u32
-let random_bool = rng.bool(0.5);        // Generate a random boolean with 50% probability
-let random_float = rng.float();         // Generate a random float between 0.0 and 1.0
-let random_integer = rng.int(1, 100);   // Generate a random integer between 1 and 100
-```
-
-For more details on the available methods, refer to the [API documentation](https://docs.rs/vrd).
-
-### Can I seed the random number generator for reproducible results?
-
-Yes, you can seed the random number generator using the `Random::seed()` method:
-
-```rust
-use vrd::random::Random;
-
-let mut rng = Random::new();
-rng.seed(12345);
-```
-
-By providing the same seed value, you can ensure that the random number generator produces the same sequence of numbers across multiple runs.
-
-### How can I customize the random number generation?
-
-Random (VRD) provides the `MersenneTwisterConfig` struct that allows you to customize various parameters of the Mersenne Twister algorithm. You can create a custom configuration and pass it to the random number generator:
-
-```rust
-use vrd::mersenne_twister::MersenneTwisterConfig;
-use vrd::random::Random;
-
-let config = MersenneTwisterConfig::new_custom(
-    624,        // n
-    397,        // m
-    0x9908b0df, // matrix_a
-    0x80000000, // upper_mask
-    0x7fffffff, // lower_mask
-    0x9d2c5680, // tempering_mask_b
-    0xefc60000  // tempering_mask_c
-);
-
-let mut rng = Random::new_with_config(config);
-```
-
-For more information on the available configuration options, refer to the [API documentation](https://docs.rs/vrd).
-
-![divider][divider].class="m-10 w-100"
-
-## Troubleshooting
-
-### I encountered an issue with Random (VRD). Where can I report it?
-
-If you encounter any issues or bugs with Random (VRD), please open an issue on the [GitHub repository](https://github.com/sebastienrousseau/vrd/issues). Provide as much detail as possible, including the version of Random (VRD) you are using, the Rust version, and steps to reproduce the issue.
-
-### Can I contribute to the development of Random (VRD)?
-
-Absolutely! Random (VRD) welcomes contributions from the community. If you would like to contribute, please follow the [contribution guidelines](https://github.com/sebastienrousseau/vrd/blob/main/CONTRIBUTING.md) on the GitHub repository. You can contribute by reporting issues, suggesting improvements, or submitting pull requests.
-
-![divider][divider].class="m-10 w-100"
-
-## Support and Resources
-
-### Where can I find the documentation for Random (VRD)?
-
-The documentation for Random (VRD) is available on [docs.rs](https://docs.rs/vrd). It provides detailed information about the API, usage examples, and configuration options.
-
-### Are there any examples or tutorials available?
-
-Yes, the Random (VRD) repository includes [examples](https://github.com/sebastienrousseau/vrd/tree/main/examples) that demonstrate how to use the library in various scenarios. These examples can serve as a starting point for your own projects.
-
-### How can I get support for Random (VRD)?
-
-If you need support or have any questions regarding Random (VRD), you can reach out to the community through the following channels:
-
-- Open an issue on the [GitHub repository](https://github.com/sebastienrousseau/vrd/issues)
-- Join the [Rust community](https://www.rust-lang.org/community) and ask for help on the forums or chat platforms
-
-The Random (VRD) community is friendly and always ready to help!
-
-[divider]: https://kura.pro/common/images/elements/divider.svg "Divider"
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is vrd?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "vrd is a free, open-source random number generator library for Rust. It uses Xoshiro256++ by default and adds Mersenne Twister, PCG, ChaCha20 and quasi-random sequences behind Cargo features."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is vrd cryptographically secure?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only with the crypto feature and Random::new_secure(), which uses ChaCha20. The default Xoshiro256++ generator, the Mersenne Twister and PCG are predictable and must not be used for secrets."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does vrd still use the Mersenne Twister?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not by default. Since 0.0.10, Random::new() uses Xoshiro256++. The Mersenne Twister is still available through Random::new_mersenne_twister() for code that needs MT19937's exact output."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which Rust version do I need?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rust 1.85 or newer. vrd's manifest says 1.70, but the rand 0.10 crate it depends on needs 1.85."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I get the same numbers on every run?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Seed the generator with Random::from_u64_seed or Random::from_seed and it produces the same sequence every time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I share one generator between threads?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. A Random holds mutable state. Use one per thread, each with its own seed, or split() streams from the default backend."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it work without the standard library?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. With default features off, the core builds without std or an allocator; CI checks it for a Cortex-M target and for WebAssembly. Seed it yourself there."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the output stable between versions?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The project aims to keep the output for a seed the same between patch releases and lists any change by method in the CHANGELOG. Releases 0.0.10 and 0.0.11 changed the output of int, uint, random_range and normal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is crates.io at 0.0.12 when the repository says 0.0.14?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Versions 0.0.13 and 0.0.14 updated dependencies only and were tagged on GitHub but not published to crates.io. 0.0.12 has the same API."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does it cost, and under which licence?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nothing. vrd is free software under the Apache License 2.0 or the MIT licence, at your option."
+      }
+    }
+  ]
+}
+</script>
